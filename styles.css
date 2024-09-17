@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(data:image/png;base64,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);
+}
+/*aca les dejo lo basico */
+img{
+    width: 100%;
+    height: 280px;
+    padding: 90px;
+}
+
+h2{
+    text-align: center;
+    color: blueviolet;
+}
+
+div{
+    padding: 10px;
+}
+
+form{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    border-radius: 15px;
+    width: 100%;
+    max-width: 600px;
+    padding: 25px;
+    background-color: black;
+    color: white;
+}
+
+.input{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    input{
+    box-sizing: border-box;
+    font-size: 17px;
+    width: 400px;
+    padding: 5px;
+}
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    button{
+        width: 300px;
+        background-color: blueviolet;
+        color: azure;
+        padding: 15px;
+        font-size: 14px;
+        border-radius: 5px;
+    }
+}
+
+.certificado{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    input{
+    width: fit-content;
+    width: 100%;
+}
+}
